@@ -1,0 +1,43 @@
+body {
+    padding:0;
+}
+h3 {
+    padding-left:7px;
+    color:#34495e;
+}
+h4 {
+    padding-left:7px;
+    color:#5a7fa6;
+}
+p {
+  
+}
+.wrapper {
+    padding:40px;
+}
+.wrapper > img {
+    margin-top:15px;
+}
+.responseBody {
+    color:#023152;
+    font-weight:bold;
+}
+iframe {
+    max-width: 100%
+}
+
+a.list-group-item:hover, a.list-group-item:focus {
+    background-color:#ff6600;
+    color:#fff;
+}
+
+
+.title {
+    padding: 5px;
+    color: rgba(85, 85, 85, 0.74);
+    padding-left: 34px;
+}
+
+.modal-title{
+    color:#000;
+}

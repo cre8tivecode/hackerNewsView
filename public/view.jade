@@ -1,0 +1,30 @@
+doctype 5
+html(lang="en")
+  head
+    link(rel='stylesheet', href='/public/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/public/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/public/css/main.css')
+    script(src='/public/js/jquery.js')
+    script(src='/public/js/bootstrap.min.js')
+    script(src='/public/js/main.js')
+    title= "A Hacker View"
+    
+  body
+
+    h5(class='text-left title') Hacker News View and Reader
+    div(class='well')
+        div(class='list-group')   
+            - for (var i = 0; i < data.length; ++i) {
+                a(href=data[i].url class='list-group-item' data-toggle='modal' data-target='#myModal' data-title=data[i].title data-url=data[i].url)= data[i].title
+                    h4(class='list-group-item-heading')
+             - }
+                    
+        div(class='modal fade' id='myModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true')
+            div(class='modal-dialog')
+                div(class='modal-content')
+                        div(class='modal-header')
+                            button(type='button' class='close' data-dismiss='modal' aria-hidden='true')&times
+                            h4(class='modal-title' id='myModalLabel') 
+                        div(class='modal-body')
+                            iframe(id='content' width='100%' height='500px' seamless='seamless')
+
