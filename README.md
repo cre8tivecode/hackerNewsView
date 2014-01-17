@@ -1,0 +1,1 @@
+A simple view and reader for Hacker News.
